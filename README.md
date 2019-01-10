@@ -1,5 +1,13 @@
 # Convert form AJV to Swagger
 
+[![npm](https://img.shields.io/npm/v/swagger-ajv-converter.svg)](https://npm.im/swagger-ajv-converter)
+[![license](https://img.shields.io/npm/l/swagger-ajv-converter.svg)](https://npm.im/swagger-ajv-converter)
+[![Build Status](https://travis-ci.org/bollwar404/swagger-ajv-converter.svg?branch=master)](https://travis-ci.org/bollwar404/swagger-ajv-converter)
+[![dependencies Status](https://david-dm.org/bollwar404/swagger-ajv-converter/status.svg)](https://david-dm.org/bollwar404/swagger-ajv-converter)
+[![devDependencies Status](https://david-dm.org/bollwar404/swagger-ajv-converter/dev-status.svg)](https://david-dm.org/bollwar404/swagger-ajv-converter?type=dev)
+[![Coverage Status](https://coveralls.io/repos/github/bollwar404/swagger-ajv-converter/badge.svg?branch=master)](https://coveralls.io/github/bollwar404/swagger-ajv-converter?branch=master)
+[![Known Vulnerabilities](https://snyk.io/test/github/bollwar404/swagger-ajv-converter/badge.svg)](https://snyk.io/test/github/bollwar404/swagger-ajv-converter)
+
 Small module that converts from ajv schemas to Swagger doc
 
 Api functions can throw following errors:
@@ -14,7 +22,7 @@ npm i -E swagger-ajv-converter
 
 ## Usage
 
-```ecmascript 6
+```js
 const Swagger = require('swagger-ajv-converter');
 
 const myBaseSchema = require('./myBaseSchema.json');
@@ -62,18 +70,3 @@ const methods = [
   }
 }
 ```
-
-## Module docs
-
-If you update this module, please support JSDOC and run `npm run docs` - docs will be auto generated.
-
-Do not edit `README.md` directly!
-
-
-
-## Coverage
-
-File        |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
-------------|----------|----------|----------|----------|-------------------|
-All files   |    97.37 |    86.11 |      100 |    97.37 |                   |
- Swagger.js |    97.37 |    86.11 |      100 |    97.37 |           174,180 |

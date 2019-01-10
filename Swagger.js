@@ -1,8 +1,10 @@
-
-
-const clone = require('stringify-clone');
+'use strict';
 
 const baseSwagger = require('./files/base');
+
+function clone(obj) {
+  return JSON.parse(JSON.stringify(obj));
+}
 
 const places = {
   params: 'path',
