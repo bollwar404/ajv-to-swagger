@@ -2,7 +2,7 @@
 
 const Swagger = require('../Swagger');
 const sinon = require('sinon');
-const assert = require('assert');
+const {assert} = require('chai');
 
 const testData = require('../files/test');
 const baseData = require('../files/base');

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha ./test/*",
-    "lint": "eslint *.js",
+    "lint": "eslint .",
     "coverage": "nyc mocha --timeout 200 --recursive --exit",
     "check_coverage": "nyc check-coverage --lines 90 --functions 90 --branches 80",
     "docs": "./docs.sh"
@@ -29,12 +29,10 @@
     "stringify-clone": "2.0.1"
   },
   "devDependencies": {
-    "assert": "1.4.1",
-    "dmd-bitbucket": "0.1.10",
+    "chai": "^4.2.0",
     "eslint": "^5.12.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
-    "jsdoc-to-markdown": "4.0.1",
     "mocha": "5.2.0",
     "nyc": "13.1.0",
     "sinon": "7.2.2"

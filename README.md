@@ -14,7 +14,7 @@ npm i -E swagger-ajv-converter
 
 ## Usage
 
-```ecmascript 6
+```js
 const Swagger = require('swagger-ajv-converter');
 
 const myBaseSchema = require('./myBaseSchema.json');
@@ -62,18 +62,3 @@ const methods = [
   }
 }
 ```
-
-## Module docs
-
-If you update this module, please support JSDOC and run `npm run docs` - docs will be auto generated.
-
-Do not edit `README.md` directly!
-
-
-
-## Coverage
-
-File        |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
-------------|----------|----------|----------|----------|-------------------|
-All files   |    97.37 |    86.11 |      100 |    97.37 |                   |
- Swagger.js |    97.37 |    86.11 |      100 |    97.37 |           174,180 |
