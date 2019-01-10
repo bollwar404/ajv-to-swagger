@@ -1,7 +1,6 @@
-
+'use strict';
 
 const clone = require('stringify-clone');
-
 const baseSwagger = require('./files/base');
 
 const places = {
