@@ -1,0 +1,42 @@
+{
+  "name": "swagger-ajv-converter",
+  "version": "1.0.0",
+  "description": "convert from ajv to swagger",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha ./test/*",
+    "lint": "eslint *.js",
+    "coverage": "nyc mocha --timeout 200 --recursive --exit",
+    "check_coverage": "nyc check-coverage --lines 90 --functions 90 --branches 80",
+    "docs": "./docs.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bollwar404/swagger-ajv-converter.git"
+  },
+  "keywords": [
+    "swagger",
+    "ajv",
+    "converter"
+  ],
+  "author": "Pavel Vlasov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bollwar404/swagger-ajv-converter/issues"
+  },
+  "homepage": "https://github.com/bollwar404/swagger-ajv-converter#readme",
+  "dependencies": {
+    "stringify-clone": "2.0.1"
+  },
+  "devDependencies": {
+    "assert": "1.4.1",
+    "dmd-bitbucket": "0.1.10",
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jsdoc-to-markdown": "4.0.1",
+    "mocha": "5.2.0",
+    "nyc": "13.1.0",
+    "sinon": "7.2.2"
+  }
+}

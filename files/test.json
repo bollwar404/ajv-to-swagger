@@ -1,0 +1,128 @@
+{
+  "type": "object",
+  "properties": {
+    "body": {
+      "type": "object",
+      "properties": {
+        "simpleParam": {
+          "type": "string",
+          "title": "simple string param"
+        },
+        "oneOfParam": {
+          "oneOf": [
+            {
+              "type": "string",
+              "title": "first variable"
+            },
+            {
+              "type": "number",
+              "title": "second variable"
+            },
+            {
+              "type": "object",
+              "properties": {
+                "oneOfObj": {
+                  "type": "string",
+                  "title": "Again"
+                }
+              }
+            }
+          ]
+        },
+        "objectParam": {
+          "type": "object",
+          "properties": {
+            "firstObjectParam": {
+              "type": "string",
+              "title": "FUUUUUUUUUU"
+            },
+            "secondObjectParam": {
+              "type": "string",
+              "title": "FUUUUUUU"
+            }
+          },
+          "required": [
+            "firstObjectParam"
+          ]
+        },
+        "collectionParam": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "collectionProp1": {
+                "type": "string",
+                "title": "coll prop 1"
+              }
+            }
+          }
+        },
+        "arrayParam": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "title": "What a hell"
+          }
+        }
+      },
+      "required": [
+        "oneOfParam",
+        "simpleParam",
+        "objectParam"
+      ]
+    },
+    "params": {
+      "type": "object",
+      "properties": {
+        "inlineParam": {
+          "type": "string",
+          "title": "required inline param"
+        },
+        "inlineParamUnreq": {
+          "type": "string",
+          "title": "un required inline param"
+        }
+      },
+      "required": [
+        "inlineParam"
+      ]
+    },
+    "cookies": {
+      "type": "object",
+      "properties": {
+        "cookie": {
+          "type": "string",
+          "title": "required cookie"
+        },
+        "cookieTwo": {
+          "type": "string",
+          "title": "un required cookie"
+        }
+      },
+      "required": [
+        "cookie"
+      ]
+    },
+    "query": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "title": "required query"
+        },
+        "test": {
+          "type": "boolean",
+          "title": "test param"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  "required": [
+    "body",
+    "cookies",
+    "params"
+  ]
+}
