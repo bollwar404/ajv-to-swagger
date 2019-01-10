@@ -25,16 +25,14 @@
     "url": "https://github.com/bollwar404/swagger-ajv-converter/issues"
   },
   "homepage": "https://github.com/bollwar404/swagger-ajv-converter#readme",
-  "dependencies": {
-    "stringify-clone": "2.0.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "chai": "^4.2.0",
     "eslint": "^5.12.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
-    "mocha": "5.2.0",
-    "nyc": "13.1.0",
-    "sinon": "7.2.2"
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
+    "sinon": "^7.2.2"
   }
 }
