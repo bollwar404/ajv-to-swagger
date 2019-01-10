@@ -4,7 +4,7 @@ const sinon = require('sinon');
 const { assert } = require('chai');
 const Swagger = require('../Swagger');
 
-const testData = require('../files/test');
+const testData = require('./test.json');
 const baseData = require('../files/base');
 
 describe('src/tw_shared_types/swagger/Swagger.js', () => {
