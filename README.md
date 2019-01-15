@@ -8,65 +8,79 @@
 [![Coverage Status](https://coveralls.io/repos/github/bollwar404/swagger-ajv-converter/badge.svg?branch=master)](https://coveralls.io/github/bollwar404/swagger-ajv-converter?branch=master)
 [![Known Vulnerabilities](https://snyk.io/test/github/bollwar404/swagger-ajv-converter/badge.svg)](https://snyk.io/test/github/bollwar404/swagger-ajv-converter)
 
-Small module that converts from ajv schemas to Swagger doc
+That package converts ajv schemas (JSON schema draft 07) to Swagger schema (OpenApi 3).
 
-Api functions can throw following errors:
-
-* `Error` for all problems
+All you need to do after conversion is to insert converted schema into corresponding place.
 
 ## Install
 
 ```bash
-npm i -E swagger-ajv-converter
+npm i ajv-to-swagger
 ```
 
 ## Usage
 
 ```js
-const Swagger = require('swagger-ajv-converter');
+const convertor = require('ajv-to-swagger');
 
-const myBaseSchema = require('./myBaseSchema.json');
-const methodSchema = require('./methodSchema.json');
+const ajvResponseSchema = {}; // imagine something here, check test/test.js for an example
 
-const name = 'My awesome module'; // module name
-const swaggerData = {
-  title: 'some title', // overall module title
-  description: 'someDescr', // Description
-}
-const swaggerOptions = {
-  type: 'API', //types from schema
-  baseSchema: Object.assign({}, Swagger.base, myBaseSchema),
-}
+// make a draft of your schema without a response schema:
+const baseSchema = {
+                     "openapi": "3.0.1",
+                     "info": {
+                       "title": "defaultTitle",
+                       "description": "defaultDescription",
+                       "version": "0.1"
+                     },
+                     "servers": [
+                       {
+                         "url": "https://google.com"
+                       }
+                     ],
+                     "paths": {
+                       "/get/some/": {
+                         "get": {
+                           "description": "Auto generated using Swagger Inspector",
+                           "parameters": [
+                             {
+                               "name": "cs",
+                               "in": "query",
+                               "schema": {
+                                 "type": "string"
+                               },
+                               "example": "E"
+                             }
+                           ],
+                           "responses": {
+                             "200": {
+                               "description": "Auto generated using Swagger Inspector",
+                               "content": {
+                                 "application/json": {
+                                   "schema": {}
+                                 }
+                               }
+                             }
+                           },
+                           "servers": [
+                             {
+                               "url": "https://google.com"
+                             }
+                           ]
+                         },
+                         "servers": [
+                           {
+                             "url": "https://google.com"
+                           }
+                         ]
+                       }
+                     }
+                   };
 
-const swagger = new Swagger(name, swaggerData, swaggerOptions);
+const responseSwagger = convertor.convertSchema(ajvResponseSchema);
 
-const methods = [
-{
-  path: '/one/',
-  methods: {
-    POST: {
-      schema: methodSchema,
-      swagger: {
-        summary: 'Info',
-        description: 'descr'
-      }
-    },
-  },
-}
-]
-
+// put your schema where it needs to be
+swaggerDoc.paths['/get/some/'].get.responses['200'].content['application/json'].schema = convertedSchema.schema;
 ```
 
-## Example of AJV schema
-
-```json
-{
-  "type": "object",
-  "properties": {
-    "body": {},
-    "cookies": {},
-    "query": {},
-    "headers": {}
-  }
-}
-```
+Now `swaggerDoc` has a valid Swagger schema. You can serialize it in JSON and ouput when needed.

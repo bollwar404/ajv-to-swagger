@@ -14,5 +14,21 @@
     "extends": "airbnb-base",
     "plugins": [
         "import"
-    ]
+    ],
+    "rules": {
+        "strict": [
+            "error",
+            "global"
+        ],
+        "prefer-destructuring": "warn",
+        "no-mixed-operators": "off",
+        "max-len": [
+            "error",
+            140
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ]
+    }
 }
