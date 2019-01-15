@@ -1,13 +1,13 @@
 {
   "name": "ajv-to-swagger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "convert from ajv to swagger",
   "main": "Swagger.js",
   "scripts": {
     "test": "mocha",
     "lint": "eslint .",
     "coverage": "nyc mocha --timeout 200 --recursive --exit",
-    "check_coverage": "nyc check-coverage --lines 90 --functions 90 --branches 80",
+    "check_coverage": "nyc check-coverage --lines 80 --functions 80 --branches 80",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "prepublishOnly": "npm test && npm run coverage && npm run check_coverage && npm run lint"
   },
