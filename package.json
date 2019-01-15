@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bollwar404/swagger-ajv-converter.git"
+    "url": "git+https://github.com/bollwar404/ajv-to-swagger.git"
   },
   "keywords": [
     "swagger",
@@ -22,9 +22,9 @@
   ],
   "author": "Pavel Vlasov",
   "bugs": {
-    "url": "https://github.com/bollwar404/swagger-ajv-converter/issues"
+    "url": "https://github.com/bollwar404/ajv-to-swagger/issues"
   },
-  "homepage": "https://github.com/bollwar404/swagger-ajv-converter#readme",
+  "homepage": "https://github.com/bollwar404/ajv-to-swagger#readme",
   "dependencies": {
     "ajv": "6.7.0",
     "debug": "^4.1.1",
