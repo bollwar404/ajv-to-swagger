@@ -1,12 +1,12 @@
 # Convert form AJV to Swagger
 
-[![npm](https://img.shields.io/npm/v/swagger-ajv-converter.svg)](https://npm.im/swagger-ajv-converter)
-[![license](https://img.shields.io/npm/l/swagger-ajv-converter.svg)](https://npm.im/swagger-ajv-converter)
-[![Build Status](https://travis-ci.org/bollwar404/swagger-ajv-converter.svg?branch=master)](https://travis-ci.org/bollwar404/swagger-ajv-converter)
-[![dependencies Status](https://david-dm.org/bollwar404/swagger-ajv-converter/status.svg)](https://david-dm.org/bollwar404/swagger-ajv-converter)
-[![devDependencies Status](https://david-dm.org/bollwar404/swagger-ajv-converter/dev-status.svg)](https://david-dm.org/bollwar404/swagger-ajv-converter?type=dev)
-[![Coverage Status](https://coveralls.io/repos/github/bollwar404/swagger-ajv-converter/badge.svg?branch=master)](https://coveralls.io/github/bollwar404/swagger-ajv-converter?branch=master)
-[![Known Vulnerabilities](https://snyk.io/test/github/bollwar404/swagger-ajv-converter/badge.svg)](https://snyk.io/test/github/bollwar404/swagger-ajv-converter)
+[![npm](https://img.shields.io/npm/v/ajv-to-swagger.svg)](https://npm.im/ajv-to-swagger)
+[![license](https://img.shields.io/npm/l/ajv-to-swagger.svg)](https://npm.im/ajv-to-swagger)
+[![Build Status](https://travis-ci.org/bollwar404/ajv-to-swagger.svg?branch=master)](https://travis-ci.org/bollwar404/ajv-to-swagger)
+[![dependencies Status](https://david-dm.org/bollwar404/ajv-to-swagger/status.svg)](https://david-dm.org/bollwar404/ajv-to-swagger)
+[![devDependencies Status](https://david-dm.org/bollwar404/ajv-to-swagger/dev-status.svg)](https://david-dm.org/bollwar404/ajv-to-swagger?type=dev)
+[![Coverage Status](https://coveralls.io/repos/github/bollwar404/ajv-to-swagger/badge.svg?branch=master)](https://coveralls.io/github/bollwar404/ajv-to-swagger?branch=master)
+[![Known Vulnerabilities](https://snyk.io/test/github/bollwar404/ajv-to-swagger/badge.svg)](https://snyk.io/test/github/bollwar404/ajv-to-swagger)
 
 That package converts ajv schemas (JSON schema draft 07) to Swagger schema (OpenApi 3).
 
