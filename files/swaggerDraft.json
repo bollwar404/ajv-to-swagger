@@ -1,0 +1,50 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "defaultTitle",
+    "description": "defaultDescription",
+    "version": "0.1"
+  },
+  "servers": [
+    {
+      "url": "https://onetwotrip.com"
+    }
+  ],
+  "paths": {
+    "/get/some/": {
+      "get": {
+        "description": "Auto generated using Swagger Inspector",
+        "parameters": [
+          {
+            "name": "cs",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "example": "E"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://onetwotrip.com"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "https://onetwotrip.com"
+        }
+      ]
+    }
+  }
+}
