@@ -1,6 +1,6 @@
 {
   "name": "ajv-to-swagger",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "convert from ajv to swagger",
   "main": "Swagger.js",
   "scripts": {
