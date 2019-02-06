@@ -5,7 +5,13 @@ const toOpenApi = require('json-schema-to-openapi-schema');
 const OpenAPISchemaValidator = require('openapi-schema-validator').default;
 const debug = require('debug')('ajvToSwagger');
 
-const ajv = new Ajv({ verbose: true, allErrors: true });
+const ajvLoger = {
+  log: (...args) => { debug('LOG', ...args); },
+  warn: (...args) => { debug('WARN', ...args); },
+  error: (...args) => { debug('ERROR', ...args); },
+};
+
+const ajv = new Ajv({ verbose: true, allErrors: true, logger: ajvLoger });
 const swaggerBase = require('./files/swaggerDraft.json');
 
 function clone(obj) {
@@ -45,7 +51,7 @@ function convertSchema(schema, options = { validate: true }) {
   try {
     ajv.compile(schema);
   } catch (err) {
-    debug('AJV validation failed, chema is invalid');
+    debug('AJV validation failed, schema is invalid');
     throw err;
   }
   debug('schema is valid');
