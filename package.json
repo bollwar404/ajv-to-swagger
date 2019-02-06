@@ -1,6 +1,6 @@
 {
   "name": "ajv-to-swagger",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "convert from ajv to swagger",
   "main": "Swagger.js",
   "scripts": {
@@ -26,19 +26,19 @@
   },
   "homepage": "https://github.com/bollwar404/ajv-to-swagger#readme",
   "dependencies": {
-    "ajv": "6.7.0",
+    "ajv": "6.8.1",
     "debug": "^4.1.1",
     "json-schema-to-openapi-schema": "0.3.0",
-    "openapi-schema-validator": "3.0.2"
+    "openapi-schema-validator": "3.0.3"
   },
   "devDependencies": {
     "chai": "^4.2.0",
     "coveralls": "^3.0.2",
-    "eslint": "^5.12.0",
+    "eslint": "^5.13.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-import": "^2.16.0",
     "mocha": "^5.2.0",
-    "nyc": "^13.1.0"
+    "nyc": "^13.2.0"
   },
   "engines": {
     "node": ">=8"
