@@ -2,7 +2,7 @@
   "name": "ajv-to-swagger",
   "version": "1.0.3",
   "description": "convert from ajv to swagger",
-  "main": "Swagger.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha",
     "lint": "eslint .",
